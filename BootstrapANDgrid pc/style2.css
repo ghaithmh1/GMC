@@ -112,6 +112,14 @@
 }
 
 
+#submit-button {
+
+    position: relative;
+    left: 60% !important;
+    
+}
+
+
 #contact-form input {
     width: calc(100% - 20px); 
     padding: 8px;
@@ -220,4 +228,5 @@ footer a:hover {
     .navbar-nav .nav-link {
         margin-right: 0;
     }
+   
 }
