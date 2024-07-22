@@ -34,7 +34,14 @@ for (let i = 0; i < btnplus.length; i++) {
     nbc[i] = 0;
     btnlv[i].addEventListener('click', function() {
         nbc[i]++;
-        this.style.color = (nbc[i] % 2 === 1) ? 'red' : 'black';
+        if(nbc[i]%2==1)
+            {
+                this.style.color = "red";
+            }
+            else
+            {
+                this.style.color = "black";
+            }
     });
 
     let btndlt = document.getElementsByClassName('fas fa-trash-alt');
