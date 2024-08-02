@@ -1,0 +1,10 @@
+
+function com(t1, t2) {
+    let r = 0;
+    for (let i = 0; i < t2.length; i++) {
+        if (!t1.includes(t2[i])) {
+            r += t2[i];} }
+    for (let i = 0; i < t1.length; i++) {
+        if (!t2.includes(t1[i])) {
+            r += t1[i]; } }
+    return r;}
