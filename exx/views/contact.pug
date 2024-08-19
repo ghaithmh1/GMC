@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")    
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css", integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    link(rel="stylesheet" href="/stylesheets/style.css")
+    title contact us
+  body
+    nav#navbar
+      
+      a(href="home")
+        i.fa-solid.fa-house
+        | home page
+      a(href="serv")
+        i.fa-solid.fa-briefcase
+        | Services
+
+    
+    section.contact-section#contact
+      div.container
+        h2 Contact:
+        form#contact-form
+          div.mb-3
+            label.form-label(for="name") Name:
+            input.form-control(type="text", id="name", name="name", required=true)
+          div.mb-3
+            label.form-label(for="email") Email:
+            input.form-control(type="email", id="email", name="email")
+          div.mb-3
+            label.form-label(for="comnt") Message:
+            textarea.form-control(id="comnt", name="comnt", rows="3")
+          button.btn.btn-primary(type="submit", id="submit-button") Submit
+
+
+
+
+
+
+
+
+
+    footer#footer.text-center
+      div.container
+        ul.list-unstyled
+          li Number: 93862454
+          li Email: ghaithmh03@gmail.com
+          li 
+            a(href="https://www.instagram.com/ghaith.m.h/?hl=fr")
+              i.fa-brands.fa-instagram
+

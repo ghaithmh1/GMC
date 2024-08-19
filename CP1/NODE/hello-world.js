@@ -2,6 +2,7 @@ console.log("HELLO WORLD");
 
 const http = require('http');
 const fs = require("fs");
+const { Console } = require('console');
 
 
 const server = http.createServer((req, res) => {
@@ -21,7 +22,6 @@ fs.readFile('welcome.txt', (err, data) => {
     if (err) {
         return console.error(err);
     }
-    console.log(data);
+    console.log(data.toString());
 });
-
 

@@ -1,0 +1,271 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    top:0;
+    
+    
+}
+
+#navbar a {
+    margin: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+#navbar a:hover {
+    background-color: #555;
+}
+
+
+.hero {
+    background:   url('/hero.jpg') no-repeat center center/cover;
+    
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.hero .hh {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #4c8caf;
+    border-radius: 20px;
+}
+
+.menu {
+    
+    background-color: #e3f2fd;
+    padding: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    margin-top: 75px;
+}
+
+.menu-title {
+    
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 60px;
+
+    
+
+}
+
+/* Ensures the card image covers its container properly */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+/* Card body padding for consistent spacing */
+.card-body {
+    padding: 1rem;
+}
+
+/* Aligns the text inside the card */
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Styling for the menu section */
+.menu {
+    padding: 2rem 0;
+    background-color: #f8f9fa; /* Adjust background color as needed */
+}
+
+/* Styling for the menu title */
+.menu-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Responsive button container */
+#hbtn2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Button styling for consistent look */
+.hero-button {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+}
+
+
+.about-us {
+    
+    background-color: #e3f2fd;
+    padding: 1em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#contact-form
+{
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+
+#submit-button {
+
+    position: relative;
+    left: 60% !important;
+    
+}
+
+
+#contact-form input {
+    width: calc(100% - 20px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contact-form fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+#contact-form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 30px; 
+    vertical-align: middle; 
+}
+
+#contact-form input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+#submit-button {
+    background-color: #4c8caf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+    left:90%;
+    bottom: 0%;
+}
+
+#submit-button:hover {
+    background-color: #064a5b;
+}
+
+
+
+
+
+
+
+footer {
+    
+    
+    color:  #4c8caf;
+    text-align: center;
+    background-color: #e3f2fd;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    margin-bottom:0px ;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.text-center{
+    background-color: #e3f2fd;
+    margin-bottom: 0px;
+    
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero .hh {
+        font-size: 2.5rem;
+    }
+
+    .hero-button {
+        font-size: 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about-us img {
+        width: 100%;
+    }}
