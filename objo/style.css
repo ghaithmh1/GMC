@@ -1,66 +1,151 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
 
+/* Header styling */
+header {
+  margin-bottom: 20px;
+}
 
-* {
-    margin: 0;
-    padding: 0;
+/* Main container styling */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Flex container for cards */
+#cartItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Gap between cards */
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card body content */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.unit-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Quantity and buttons */
+.quantity {
+  font-size: 1.1rem;
+  margin: 0 10px;
+}
+
+.fa-plus-circle, .fa-minus-circle {
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.fa-plus-circle {
+  color: #28a745;
+}
+
+.fa-minus-circle {
+  color: #dc3545;
+}
+
+.fa-trash-alt {
+  color: #dc3545;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.fa-heart {
+  color: black;
+  cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  #cartItems {
+      justify-content: center;
   }
-  
-  i {
-    font-size: 35px;
-    cursor: pointer;
-    margin: 0 10px;
-    color: black;
-  }
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .shopping-card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e7e7e7;
-    border-radius: 10px;
-    padding: 3%;
-    margin: 50px 0;
-  }
-  .total-price span {
-    font-size: 30px;
-  }
-  
-  .total {
-    font-weight: bold;
-  }
-  .list-products {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    width: 70%;
-  }
-  .card {
-    padding: 5%;
-  }
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .quantity {
-    font-size: 25px;
-  }
-  
-  .card-body div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-  }
-  
-  .fa-trash-alt {
-    color: #de6b5c;
-  }
+}

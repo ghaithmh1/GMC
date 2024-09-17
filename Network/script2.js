@@ -1,32 +1,43 @@
-//met 2 (async)
+async function fet(city) {
+    const url = `http://api.weatherapi.com/v1/forecast.json?key=a03cf2cabcaa4353971164038230401&q=${city}&days=5&aqi=no&alerts=no`;
+
+    try {
+        const response = await fetch(url, { method: 'GET' });
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response;
+    } catch (error) {
+        console.error('Fetch error:', error);
+        throw error;
+    }
+}
+
 async function getter() {
     try {
-        const city = document.getElementById('city-input').value;
+        let city = document.getElementById('city-input').value;
         console.log(`Fetching weather for city: ${city}`);
 
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a03cf2cabcaa4353971164038230401&q=${city}&days=5&aqi=no&alerts=no`, {
-            method: 'GET',
-            headers: {
-                "X-RapidAPI-Key": "8bd9d6c688msh68d31c229fdad4ap11c13ajsn87b83ab7f99a",
-                "X-RapidAPI-Host": "weatherbit-v1-mashape.p.rapidapi.com"
-            }
-        });
-        const data = await response.json();
+        let response = await fet(city);
 
-        
+        if (!response.ok) {
+            city = city.replace(/\s+/g, '');
+            response = await fet(city);
+        }
+
+        const data = await response.json();
         const location = data.location.name;
         const temperature = data.current.temp_c;
         const condition = data.current.condition.text;
+
         document.getElementById('weather-info').innerHTML = `
             <h3>Weather for ${location}</h3>
             <p>Temperature: ${temperature}°C</p>
-            <p>Condition: ${condition}</p>
-        `;
+            <p>Condition: ${condition}</p>`;
     } catch (error) {
         console.error('Error:', error);
         document.getElementById('weather-info').innerHTML = '<p>Failed to load weather data. Please try again later.</p>';
     }
 }
 
-
-document.getElementById('get-weather').addEventListener('click', getter);
+document.getElementById('fetch-button').addEventListener('click', getter);

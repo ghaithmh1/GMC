@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "nodemailer": "^6.9.14"
   },
   "name": "nouveau-dossier",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

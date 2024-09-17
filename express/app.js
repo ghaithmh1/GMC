@@ -5,7 +5,7 @@ const port = 4000;
 
 
 const checkWorkingHours = require('./middleware/time');
-//app.use(checkWorkingHours);
+
 
 app.set('view engine', 'pug');
 app.use(express.static("public"));

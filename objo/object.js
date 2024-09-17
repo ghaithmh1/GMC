@@ -64,6 +64,9 @@ cart.addItem(basket, 2);
 cart.addItem(socks, 5);
 cart.addItem(bag, 1);
 
+
+addEventListener
+
 // Display the cart
 console.log('Shopping Cart Items:');
 cart.displayItems();
