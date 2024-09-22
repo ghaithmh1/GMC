@@ -1,0 +1,84 @@
+.header_class {
+    padding-left: 152px;
+    padding-right: 160px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    height: 70px;
+    box-shadow: 0 0px 8px 0px #33333330;
+    z-index: 9;
+  }
+  
+  .FullLogo {
+    width: 268px;
+    height: 33px;
+  }
+  
+  .nav {
+    display: flex;
+    margin-top: 9px;
+  }
+  
+  .nav_items {
+    font-size: 15px;
+    font-family: "MyFontFace1";
+    margin-left: 23px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ababab;
+  }
+  
+  .nav_items:hover {
+    text-decoration: none;
+    color: #43bfa5;
+  }
+  
+  .dropbtn {
+    font-size: 15px;
+    font-family: "MyFontFace1", sans-serif;
+    margin-left: 23px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ababab;
+  }
+  
+  .dropdown_element {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown_element_items {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 216px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown_element_items a {
+    font-size: 15px;
+    font-family: "MyFontFace1", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ababab;
+  }
+  
+  .dropdown_element_items a:hover {
+    background-color: rgb(249, 249, 250);
+    color: #43bfa5;
+  }
+  
+  .dropdown_element:hover .dropdown_element_items {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown_element:hover .dropbtn {
+    color: #43bfa5;
+  }
+  
