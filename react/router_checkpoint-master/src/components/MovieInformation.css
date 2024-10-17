@@ -1,0 +1,55 @@
+.shaperDiv {
+    position: absolute;
+    width: 1200px;
+    height: 190px;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 1;
+    background-color: black;
+    box-shadow: 3px 3px #0011ff88, -1em 0 .4em #00a2ff;
+    opacity: 0.9;
+    border-radius: 4px;
+
+}
+
+.movieInfo_SectionTwo {
+    display: flex;
+}
+
+.firstUnder {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.secondUnder {
+    display: block;
+    width: 70%;
+    padding: 80px;
+    z-index: 2;
+}
+
+.secondUnder h1 {
+    color: white;
+    font-family: fantasy;
+    font-size: 50;
+    font-style: oblique;
+
+}
+
+.secondUnder p {
+    font-family: cursive;
+    color: white;
+}
+
+.secondUnder label {
+    font-family: fantasy;
+    color: white;
+}
+
+.imgPoster {
+    width: 200px;
+    z-index: 4;
+    border-radius: 4px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+}

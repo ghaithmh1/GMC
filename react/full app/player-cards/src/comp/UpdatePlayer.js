@@ -2,15 +2,7 @@ import React, { useState } from 'react';
 import './UpdatePlayer.css'
 
 const UpdatePlayer = () => {
-    const [player, setPlayer] = useState({
-        id: '',
-        name: '',
-        team: '',
-        nationality: '',
-        jerseyNumber: '',
-        age: '',
-        imgUrl: ''
-    });
+    const [player, setPlayer] = useState({ });
 
     const handleChange = (e) => {
         setPlayer({ ...player, [e.target.name]: e.target.value });

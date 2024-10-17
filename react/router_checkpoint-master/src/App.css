@@ -1,0 +1,328 @@
+.appTitle {
+  color: black;
+  text-align: center;
+  font-family: fantasy;
+  padding-left: 50px;
+  font-size: 50px;
+  font-style: oblique;
+  text-shadow: 0 4px 8px #0011ff88,
+    0 12px 8px #00a2ff;
+}
+
+
+.navHome {
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  font-style: oblique;
+  padding-right: 15px;
+  padding-top: 10px;
+  text-shadow: 0 4px 8px #0011ff88,
+    0 12px 8px #00a2ff;
+}
+
+.navTvShows {
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  font-style: oblique;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-shadow: 0 4px 8px #0011ff88,
+    0 12px 8px #00a2ff;
+}
+
+.navMovies {
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  font-style: oblique;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-shadow: 0 4px 8px #0011ff88,
+    0 12px 8px #00a2ff;
+}
+
+.navLatest {
+  color: black;
+  font-family: fantasy;
+  font-size: 20px;
+  font-style: oblique;
+  padding-right: 100px;
+  padding-top: 10px;
+  text-shadow: 0 4px 8px #0011ff88,
+    0 12px 8px #00a2ff;
+}
+
+.movieCard img {
+  width: 190px;
+  height: 250px;
+}
+
+.movieList {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* padding-top: 30px; */
+}
+
+.firstSection {
+  display: flex;
+}
+
+.divFilter {
+  width: 600px;
+  display: flex;
+  padding-left: 250px;
+  align-items: center;
+}
+
+.divInputForm {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middleDiv {
+  display: flex;
+  justify-content: start;
+
+}
+
+.seenCounterOutput {
+  color: #2f67cc;
+  text-Align: center;
+  font-Family: fantasy;
+  font-Size: 40px;
+  font-Style: oblique;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.unSeenCounterOutput {
+  color: #010100;
+  text-Align: center;
+  font-Family: fantasy;
+  font-Size: 40px;
+  font-Style: oblique;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  z-index: 3;
+
+
+}
+
+.inputLabel {
+  color: #2f67cc;
+  font-Family: fantasy;
+  z-index: 3;
+
+}
+
+.inputField {
+  color: #2f67cc;
+  font-Family: fantasy;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.9;
+
+}
+
+.addButton {
+  font-Family: fantasy;
+  font-Size: 17px;
+
+}
+
+.input-wrapper input {
+  border: 1px solid #2f67cc;
+  border-radius: 6px;
+  position: relative;
+  width: 300px;
+  margin: 10px;
+  line-height: 6ex;
+}
+
+.input-wrapper label {
+  position: absolute;
+  top: 0.2ex;
+  z-index: 3;
+  left: 2em;
+  background-color: black;
+  opacity: 0.9;
+  padding: 0 5px;
+}
+
+.divInputForm button {
+  border-radius: 6px;
+  position: relative;
+  width: 300px;
+  margin: 10px;
+  line-height: 6ex;
+  color: white;
+}
+
+.addButton {
+  background-color: #2f67cc;
+}
+
+.movieCard {
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5%;
+  width: 190px;
+  height: 380px;
+}
+
+.EyeIcon {
+  position: absolute;
+  left: 12em;
+  z-index: 2;
+  width: 80px;
+  height: 60px;
+}
+
+.AppEyeIcon {
+  width: 80px;
+  height: 60px;
+}
+
+
+
+/* Input Form Part */
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: sans-serif;
+  background: radial-gradient(#8d8888 0%, #101010 100%);
+}
+
+.hamburger-container {
+  z-index: 5;
+  width: max-content;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  transition: transform 0.5s ease;
+}
+
+.hamburger-container .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+
+.hamburger-container .checkbox:focus~.hamburger {
+  outline: 2px solid white;
+  outline: auto;
+  outline-offset: 4px;
+}
+
+@supports selector(:focus-visible) {
+  .hamburger-container .checkbox:not(:focus-visible)~.hamburger {
+    outline: none;
+  }
+}
+
+.hamburger-container .drawer a {
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+}
+
+.hamburger-container .checkbox:checked~.drawer a {
+  visibility: visible;
+}
+
+.hamburger-container .checkbox:checked~.drawer {
+  transform: translateX(0%);
+}
+
+.hamburger-container .checkbox:checked~.hamburger .slice:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger-container .checkbox:checked~.hamburger .slice:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-container .checkbox:checked~.hamburger .slice:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+.hamburger {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: block;
+  transition: transform 0.5s ease;
+  z-index: 5;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.hamburger .slice {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #0011ff88;
+  transition: all 0.5s ease;
+}
+
+.hamburger .slice:not(:first-child) {
+  margin-top: 10px;
+}
+
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: max-content;
+  max-width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  background: black;
+  opacity: 0.9;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.drawer .nav-list {
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.drawer .nav-list .nav-list-item {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .drawer {
+    width: 100%;
+  }
+}
+
+.content {
+  margin-top: 52px;
+  padding: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: orange;
+}
